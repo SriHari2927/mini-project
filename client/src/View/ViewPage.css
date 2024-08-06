@@ -1,0 +1,45 @@
+.viewpage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bike{
+    background-color: rgb(192, 123, 123);
+    height: 680px;
+    width: 800px;
+    margin-top: 30px;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.label{
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+   
+}
+span{
+    color: white;
+    font-size: 30px;
+}
+.extradiv{
+background: rgb(76, 12, 23);
+height: 200px;
+color: white;
+width: 300px;
+align-items: center;
+text-align: center;
+padding-top: 10px;
+font-style: italic;
+}
+.labelname{
+    padding-top: 20px;
+    
+}
+.inputfield{
+    width: 250px;
+    height: 40px;
+}

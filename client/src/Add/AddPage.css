@@ -1,0 +1,37 @@
+.ins{
+    background: linear-gradient(to right, rgb(227, 52, 52), grey, lightpink,rgb(38, 133, 164),rgb(227, 52, 52));
+    height: 500px;
+    margin-top: 100px;
+}
+.mb-2{
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    
+}
+.form-heading{
+    padding: 20px;
+    width: 80%;
+    margin-left: 15px;
+}
+.form-heading1{
+    padding: 20px;
+    width: 80%;
+    margin-left: 35px;
+}
+.form-heading2{
+    padding: 20px;
+    width: 80%;
+    margin-left: 25px;
+}
+.numb{
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 50%;
+}
+.h1{
+    text-align: center;
+    padding-top: 10px;
+    font-style: italic;
+       
+}

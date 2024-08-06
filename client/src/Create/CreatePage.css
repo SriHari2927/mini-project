@@ -1,0 +1,51 @@
+.create{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+}
+.header{
+    display: flex;
+}
+.test{
+  width: 500px;
+    margin-left: 10px;
+    margin-top: 60px;
+    height: fit-content;
+    
+}
+.head{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: 800;
+}
+hr{
+    margin-top: 70px;
+    color: brown;
+    border-width: 2px;
+    
+}
+.footer{
+    display: flex;
+    margin-left: 20px;
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.first{
+    color : red;
+    font-weight: 900; 
+}
+.third{
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-weight: 600;
+}

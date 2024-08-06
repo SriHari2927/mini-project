@@ -1,0 +1,104 @@
+
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    height: 80px;
+    color: yellow;
+    margin-top: 15px;
+}
+.nav2 {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+
+}
+.nav2 {
+   
+    align-items: center;
+    gap: 80px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+.nav2 ul {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    color: white;
+
+}
+.nav2 li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* .nav2 a {
+    text-decoration: none; 
+    color: white; 
+} */
+
+.nav3{
+    height: 50px;
+    border: none;
+    width: 130px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+}
+
+.num1{
+   
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body{
+    background:  rgb(70, 45, 45);
+}
+.card-body p{
+    background: whitesmoke;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-title{
+    background: whitesmoke;
+}
+.card-text{
+    background: whitesmoke;
+    height: 50px;
+    padding-top: 10px;
+  
+}
+.card-body p:hover{
+    transform: scale(1.1);
+}
+
+.card-title:hover{
+    transform: scale(1.1);
+}
+.card-text:hover{
+    transform: scale(1.1);
+}
+.card-body h3:hover{
+    transform: scale(1.1);
+}
+.abc{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+   
+}
