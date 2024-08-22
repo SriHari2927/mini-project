@@ -11,8 +11,8 @@ const ViewPage = () => {
     description: "",
     lessonname: ""
   });
-  const [lessonname, setLessonName] = useState('');
   const [showExtra, setShowExtra] = useState(false);
+  const [newLessonName, setNewLessonName] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,7 +21,6 @@ const ViewPage = () => {
       .then((result) => {
         console.log(result.data);
         setData(result.data);
-        setLessonName(result.data.lessonname); 
       })
       .catch((err) => console.log(err));
   }, [id]);
@@ -30,12 +29,22 @@ const ViewPage = () => {
     setShowExtra(!showExtra);
   };
 
+  const handleInputChange = (e) => {
+    setNewLessonName(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:5001/update/${id}`, { lessonname })
+    const updatedData = {
+      id: id, 
+      lessonname: newLessonName };
+
+    axios.post('http://localhost:5001/addOrUpdateSubject', updatedData)
       .then(result => {
-        console.log(result);
-        setData(prevData => ({ ...prevData, lessonname })); // update data object
+        console.log("Data added:", result.data);
+        setData(result.data);
+        setShowExtra(false); 
+        setNewLessonName(""); 
         navigate('/create');
       })
       .catch(err => console.log(err));
@@ -46,41 +55,44 @@ const ViewPage = () => {
       <button className="btn btn-success" onClick={handleAddClick}>
         ADD +
       </button>
-      <form onSubmit={handleSubmit}>
-        {showExtra && (
-          <div className="extradiv">
-            <h3>Adding Topics</h3>
-            <label className="labelname" htmlFor="text">
-              <input
-                className="inputfield"
-                type="text"
-                placeholder="Enter your lesson"
-                value={lessonname}
-                onChange={(e) => setLessonName(e.target.value)}
-              />
-            </label>
-            <br />
-            <br />
-            <button className="btn btn-secondary w-50">SUBMIT</button>
-          </div>
-        )}
-      </form>
+      
+        
+      {showExtra && (
+        <form onSubmit={handleSubmit} className="extra">
+          <h3 className=" h3"> LESSON NAME</h3>
+          <input
+            type="text"
+            value={newLessonName}
+            onChange={handleInputChange}
+            placeholder="Enter lesson name"
+            className="inp"
+          />
+          <br />
+          <br />
+          <button type="submit" className=" inpbtn btn btn-primary">
+            Submit
+          </button>
+        </form>
+)}
+  
       <div className="bike">
+      <label className="label" htmlFor="text">
+          LESSON NAME: <span className="span3">{data.lessonname}</span>
+        </label>
+        <br />
         <label className="label" htmlFor="text">
           SUBJECT NAME: <span>{data.subject}</span>
         </label>
         <br />
         <label className="label" htmlFor="text">
-          TOPIC: <span>{data.topic}</span>
+          TOPIC: <span className="span1">{data.topic}</span>
         </label>
         <br />
         <label className="label" htmlFor="text">
-          DESCRIPTION: <span>{data.description}</span>
+          DESCRIPTION: <span className="span2">{data.description}</span>
         </label>
         <br />
-        <label className="label" htmlFor="text">
-          LESSON NAME: <span>{data.lessonname}</span>
-        </label>
+        
       </div>
     </div>
   );

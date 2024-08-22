@@ -1,0 +1,17 @@
+.kural{
+    background-color: white;
+    width: 90%;
+    margin-left: 70px;
+    margin-top: 30px;
+    padding-left: 30px;
+    height: 380px;
+    padding-top: 20px;
+}
+.kurall{
+    background: grey;
+}
+.one{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

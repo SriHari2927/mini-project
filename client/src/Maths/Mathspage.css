@@ -1,0 +1,35 @@
+
+.tam{
+    background: url('https://img.freepik.com/free-vector/mathematical-geometric-background-vector-gradient-blue-education-remix_53876-114100.jpg?t=st=1724234675~exp=1724238275~hmac=7a9fd64395b5e4f704346d01230acc4bbf969f7d2063cb51a4a385f9094fca79&w=2000');
+    height: 900px;
+}
+
+.tamil11{
+    background: rgb(224, 241, 240);
+    height: 400px;
+    width: 550px;
+    margin-left: 700px;
+    /* margin-top: 30px; */
+    padding-top: 20px;
+    color: black;
+    text-align: center;
+    
+}
+
+
+.tamil03{
+    background: rgb(175, 186, 175);
+    height: 300px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 200px;
+    text-align: center;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.topics33{
+    padding-top: 35px;
+}

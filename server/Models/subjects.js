@@ -5,7 +5,7 @@ const subjectSchema = new mongoose.Schema({
     subject : String,
     topic : String,
     description : String,
-    lessonname : String,
+    lessonname :String,
 });
 
 const modelSubjectmodel = mongoose.model("subjects" , subjectSchema)

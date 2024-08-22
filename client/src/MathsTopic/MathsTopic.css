@@ -1,0 +1,30 @@
+.maths0{
+    display: flex;
+}
+.fulldiv{
+    background: black;
+    height: 700px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+
+.maths1{
+    background-color: burlywood;
+    height: 400px;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: 50px;
+    text-align: center;
+}
+.mathspara{
+    padding-top: 40px;
+    font-style: italic;
+    font-weight: 600;
+}
+.examplee{
+    text-decoration:underline;
+    color: blue;
+    font-size: 20px;
+}
+

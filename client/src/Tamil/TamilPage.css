@@ -1,0 +1,42 @@
+.ttt{
+    background: url('https://img1.wsimg.com/isteam/ip/7ef46350-7aa8-4fe9-90d3-3f8b65b17cf0/0d9a5343-7009-40da-957b-b1420fc6aeb2.jpg/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365');
+    height: 900px;
+}
+
+.tamil{
+    background: rgb(47, 59, 47);
+    height: 420px;
+    width: 500px;
+    margin-left: 150px;
+   
+    color: white;
+    text-align: center;
+    
+}
+.paraa{
+    margin-top: 35px;
+}
+.parag{
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+}
+.paraa h3{
+    color: orangered;
+}
+.tamill{
+    background: rgb(47, 59, 47);
+    height: 350px;
+    width: 500px;
+    margin-left: 800px;
+    color: white;
+    text-align: center;  
+    margin-top: 20px;
+}
+.ttopics {
+    margin-top: 50px;
+    text-decoration:none ;
+    font-size: 20px;
+    color: white;
+}

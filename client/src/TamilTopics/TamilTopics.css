@@ -1,0 +1,44 @@
+.topics01{
+    background: url('https://as2.ftcdn.net/v2/jpg/05/58/71/57/1000_F_558715782_USygHh1uiqesl6Oqh67TFArXDjuGqXrs.jpg');
+}
+.topics02{
+    background: rgb(209, 195, 195);
+    width: 500px;
+    height: 495px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 40px;
+    
+}
+.tamilpara{
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.topic{
+    justify-content: space-around;
+}
+.topic2{
+    margin-left: 450px;
+    margin-top: 20px;
+}
+.topics02 h2{
+ background: white;
+ height: 50px;
+}
+.topics03{
+    background: rgb(209, 195, 195);
+    height: 550px;
+    width: 495px;
+    text-align: center;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.topics03 h2{
+    background: white;
+    height: 50px;
+}
+.kuralgal{
+    font-size: larger;
+}

@@ -9,7 +9,7 @@ const Signup = () => {
 
 const [name,setName] = useState('');
 const [email,setEmail] = useState('');
-const [password,setpassword] = useState('');
+const [password,setPassword] = useState('');
 
 const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ const handleSubmit = (e) => {
      alert("All Fields are required")
     return;
   }
-  setError('');
+  
   axios.post("http://localhost:5001/register", {name,email,password})
   .then(alert('Account created'))
   .then(result => console.log(result))
@@ -67,7 +67,7 @@ const handleSubmit = (e) => {
            <input type='password' 
            placeholder='Enter your password'
            className='input1'
-           onChange={(e) => setpassword(e.target.value)}
+           onChange={(e) => setPassword(e.target.value)}
            />
          </div>  
          <button className='xyz btn btn-primary'>REGISTER</button>
