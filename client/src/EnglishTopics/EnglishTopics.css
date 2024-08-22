@@ -1,0 +1,28 @@
+.div1{
+    display: flex;
+    background: url('https://png.pngtree.com/background/20230520/original/pngtree-blackboard-wall-with-icons-on-one-side-with-a-laptop-on-picture-image_2673153.jpg');
+    height: 900px;
+}
+
+.poems{
+    height: 500px;
+    width: 500px;
+    background : brown;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 40px;
+    margin-top:100px;
+}
+.poems0{
+    background: black;
+    height: 70px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.jklm{
+    color: rgb(56, 56, 218);
+    
+}

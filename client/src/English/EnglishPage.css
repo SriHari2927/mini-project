@@ -1,0 +1,38 @@
+.total{
+    
+    /* margin-top: 50px; */
+    background: url('https://st2.depositphotos.com/1152339/7121/i/450/depositphotos_71215107-stock-photo-education-concept-english-on-wall.jpg');
+    height: 900px;
+    
+}
+.zero{
+    background-color: rgb(24, 110, 167);
+    height: 350px;
+    text-align: center;
+    width: 500px;
+    margin:auto;
+    
+}
+.two{
+    margin-top: 30px;
+}
+.zeroo{
+    
+    height: 350px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.three{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+.four{
+    padding-top: 20px;
+    font-style: italic;
+    font-size: 20px;
+}

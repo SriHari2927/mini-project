@@ -1,0 +1,64 @@
+.bigdiv{
+    height: 1000px;
+    background: url('https://www.adorama.com/alc/wp-content/uploads/2017/01/Leading-Eye-to-Subject6.jpg');
+    
+}
+
+.second{
+    background-color: rgb(141, 138, 68);
+    height: 800px;
+    width: 600px;
+    padding-top: 30px;
+    margin: auto;
+    
+    
+
+}
+.image{
+    
+    text-align: center;
+    
+}
+
+.smalldiv{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    
+
+}
+.toosmall{
+    
+    background-color:  rgb(133, 158, 158);
+    padding-top: 45px;
+    width: 500px;
+    height: 350px;
+    margin-left: 50px;
+    
+}
+.div11{
+    
+    height: 50px;
+    
+}
+
+.div2{
+    
+    
+    height: 50px;
+
+}
+.div3{
+ height: 50px;
+}
+.div4{
+    
+    height: 50px;
+}
+.div5{
+    
+    height: 50px;
+}

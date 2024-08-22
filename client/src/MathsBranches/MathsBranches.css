@@ -1,0 +1,10 @@
+.mathseg{
+    background: white;
+    width: 90%;
+    margin-left: 70px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.mathseg h2{
+    text-decoration: underline;
+}

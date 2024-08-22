@@ -6,12 +6,12 @@ import { MdEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import axios from "axios";
 
-const CreatePage = () => {
+const GetPage = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:5001/post")
+      .get("http://localhost:5001/getAll")
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
@@ -26,18 +26,26 @@ const CreatePage = () => {
   }
 
   return (
-    <div>
+    <div  >
       <Link to="/add">
         <div className="create btn btn-success"> Add +</div>
       </Link>
+      <Link to = '/history'>
       <div className="header">
         {users.map((user) => (
           <div key={user._id} className="test bg-secondary">
             <div className="head">
+             <div className="fifth">
+                {user.lessonname && (
+                <div className="fourth">{user.lessonname}</div>
+              )}
+              </div>
+             
+              <br />
               <div className="first">{user.subject}</div><br />
               <div className="text-white">({user.topic})</div><br />
               <div className="third">{user.description}</div>
-              <div className="fourth">{user.lessonname}</div>
+             
             </div>
             <hr />
             <div className="footer">
@@ -48,8 +56,9 @@ const CreatePage = () => {
           </div>
         ))}
       </div>
+      </Link>
     </div>
   );
 };
 
-export default CreatePage;
+export default GetPage;
