@@ -2,7 +2,7 @@ import React from 'react'
 import './PhysicsTopic.css'
 const PhysicsTopic = () => {
   return (
-    <div>
+    <div className='phys'>
       <div className='principles'>
       <h2>Basic Principles</h2>
       <li>Newton's laws of motion.</li>

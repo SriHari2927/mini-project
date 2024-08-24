@@ -28,7 +28,7 @@ import PhysicsTopic from './Physics/PhysicsTopic';
 import BiologyTopics from './Biology/BiologyTopics';
 import History from './History/History';
 import Geography from './Geography/Geography';
-import Test from './Test';
+
 
 
 
@@ -62,9 +62,7 @@ const App = () => {
   <Route path = '/physicstopic' element={<PhysicsTopic />}/>
   <Route path='/biology' element = {<BiologyTopics />}/>
   <Route path='/historypage' element={<History />}/>
-  <Route path='/geography' element={<Geography />}/>
-  <Route path='/test' element={<Test />}/>
-  
+  <Route path='/geography' element={<Geography />}/>  
 </Routes>
 </BrowserRouter>
   )

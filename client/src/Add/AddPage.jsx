@@ -21,6 +21,7 @@ axios.post('http://localhost:5001/add', {subject,topic,description})
 }
 
   return (
+    <div className="full">
     <div className=" d-flex  justify-content-center align-items-center">
       <div className=" ins w-50">
         <form onSubmit={handleSubmit}>
@@ -69,6 +70,8 @@ axios.post('http://localhost:5001/add', {subject,topic,description})
         </form>
       </div>
     </div>
+    </div>
+
   );
 };
 
