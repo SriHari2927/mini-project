@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './LoginPage.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { SERVER_URL } from '../config';
 
 const LoginPage = () => {
 
@@ -12,7 +13,7 @@ const navigate = useNavigate();
 
 const handleSubmit = (e) => {
   e.preventDefault()
-  axios.post('http://localhost:5001/login', {email,password})
+  axios.post(`${SERVER_URL}/login`, {email,password})
   .then(result => {
     console.log(result)
     if(result.data=== 'Success'){

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './AddPage.css'
 import axios from "axios"
 import { useNavigate } from "react-router-dom";
+import { SERVER_URL } from "../config";
 
 const AddPage = () => {
 
@@ -12,7 +13,7 @@ const navigate = useNavigate();
 
 const handleSubmit = (e) => {
   e.preventDefault();
-axios.post('http://localhost:5001/add', {subject,topic,description})
+axios.post(`${SERVER_URL}/add`, {subject,topic,description})
 .then(result => {
   console.log(result);
   navigate('/create')
@@ -20,7 +21,7 @@ axios.post('http://localhost:5001/add', {subject,topic,description})
 .catch(err => console.log(err))
 }
 
-  return (
+return (
     <div className="full">
     <div className=" d-flex  justify-content-center align-items-center">
       <div className=" ins w-50">

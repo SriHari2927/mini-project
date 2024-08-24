@@ -28,11 +28,13 @@ import PhysicsTopic from './Physics/PhysicsTopic';
 import BiologyTopics from './Biology/BiologyTopics';
 import History from './History/History';
 import Geography from './Geography/Geography';
+import { SERVER_URL } from './config';
 
 
 
 
 const App = () => {
+  console.log("Server url",SERVER_URL)
   return (
 <BrowserRouter>
 <Routes>

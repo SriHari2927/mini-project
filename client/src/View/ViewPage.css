@@ -1,16 +1,19 @@
 .viewpage{
+    background: url('https://st2.depositphotos.com/2021995/6977/i/450/depositphotos_69771919-stock-photo-topics-wooden-letterpress-theme.jpg');
+    height: 900px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .bike{
-    background-color: rgb(192, 123, 123);
-    height: 300px;
-    width: 900px;
+    background-color: rgba(109, 109, 109, 0.714);
+    height: 400px;
+    width: 800px;
     margin: 20px;
- 
+     border: none;
+     border-radius: 5%;
     
     
     padding-top: 80px;
@@ -45,7 +48,7 @@ span{
 
 
 .extra{
-    background-color: rgb(206, 86, 86);
+    background-color: rgba(206, 86, 86, 0.679);
     height: 220px;
     width: 350px;
 }

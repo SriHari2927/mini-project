@@ -3,6 +3,7 @@ import './Signup.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { FaArrowDownLong } from "react-icons/fa6";
+import { SERVER_URL } from '../config';
 
 
 const Signup = () => {
@@ -22,7 +23,7 @@ const handleSubmit = (e) => {
     return;
   }
   
-  axios.post("http://localhost:5001/register", {name,email,password})
+  axios.post(`${SERVER_URL}/register`, {name,email,password})
   .then(alert('Account created'))
   .then(result => console.log(result))
   .catch(err => console.log(err))
