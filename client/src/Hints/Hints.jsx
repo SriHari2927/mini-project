@@ -11,7 +11,7 @@ const Hints = () => {
  <p>Lion - sleeping in a forest - mouse - playing on it - angry lion - threatened to kill the mouse - mouse asked to forgive - promised to save him one day - lion laughed - let him off - another day - lion caught by hunter - in net - mouse heard the lion roar - mouse cut the net with his teeth - lion escaped - thanked the mouse.</p>
  
   <p className='nmop text-danger'>Story:</p>
-<p>The Lion and the Mouse
+<p>The Lion and the Mouse 
   
 One day a lion was sleeping in a forest. A small mouse was playing nearby. It started playing on the body of the lion. This disturbed the lion's sleep, and he got angry. The lion threatened to kill the mouse by crushing it. The scared mouse asked forgiveness from the lion. Further, he promised he would save the lion one day. The lion started laughing. He wondered how such a small animal like a mouse could save a huge animal like a lion. But he let the mouse go off.
  
