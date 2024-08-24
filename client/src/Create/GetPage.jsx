@@ -5,13 +5,14 @@ import { IoEye } from "react-icons/io5";
 import { MdEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import axios from "axios";
+import { SERVER_URL } from "../config";
 
 const GetPage = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:5001/getAll")
+      .get(`${SERVER_URL}/getAll`)
       .then((result) => setUsers(result.data))
       .catch((err) => console.log(err));
   }, []);
@@ -26,14 +27,14 @@ const GetPage = () => {
   }
 
   return (
-    <div  >
+    <div className="full"  >
       <Link to="/add">
         <div className="create btn btn-success"> Add +</div>
       </Link>
       <Link to = '/history'>
       <div className="header">
         {users.map((user) => (
-          <div key={user._id} className="test bg-secondary">
+          <div key={user._id} className="test ">
             <div className="head">
              <div className="fifth">
                 {user.lessonname && (

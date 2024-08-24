@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './UpdatePage.css'
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
+import { SERVER_URL } from '../config';
 
 const UpdatePage = () => {
    
@@ -12,7 +13,7 @@ const[description,setDescription] = useState('');
 const navigate = useNavigate();
 
 useEffect(() => {
-  axios.get(`http://localhost:5001/getuser/${id}` )
+  axios.get(`${SERVER_URL}/getuser/${id}` )
   .then(result => {
     console.log(result)
     setSubject(result.data.subject)
@@ -26,7 +27,7 @@ useEffect(() => {
 
 const update = (e) => {
   e.preventDefault();
-  axios.put(`http://localhost:5001/update/${id}`, {subject, topic, description})
+  axios.put(`${SERVER_URL}/update/${id}`, {subject, topic, description})
   .then(result => {
     console.log(result,'hjbhjxbsj')
     navigate('/create')

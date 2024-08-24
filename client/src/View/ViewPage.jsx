@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ViewPage.css";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import { SERVER_URL } from "../config";
 
 const ViewPage = () => {
   const { id } = useParams();
@@ -17,7 +18,7 @@ const ViewPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5001/getuser/${id}`)
+      .get(`${SERVER_URL}/getuser/${id}`)
       .then((result) => {
         console.log(result.data);
         setData(result.data);
@@ -39,7 +40,7 @@ const ViewPage = () => {
       id: id, 
       lessonname: newLessonName };
 
-    axios.post('http://localhost:5001/addOrUpdateSubject', updatedData)
+    axios.post(`${SERVER_URL}/addOrUpdateSubject`, updatedData)
       .then(result => {
         console.log("Data added:", result.data);
         setData(result.data);
@@ -51,6 +52,7 @@ const ViewPage = () => {
   };
 
   return (
+    
     <div className="viewpage">
       <button className="btn btn-success" onClick={handleAddClick}>
         ADD +
